@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    --color-primario: #286075;
+}
+/* Utilidades */
+.color-primario{
+    color: var(--color-primario);
+}
+/** Clases **/
+.temas{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F8F8;
+    gap: 20px;
+}
+.tema{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 370px;
+    height: 400px;
+    padding: 5px 10px;
+    text-align: justify;
+}
+.tema img{
+    border-radius: 50%;
+    padding: 8px;
+    border: 1.5px solid #2ACAD6;
+}
+.tema h1 {
+    color: var(--color-primario);
+    text-transform: uppercase;
+    margin: 10px 0px;
+}
+.tema p{
+    margin: 10px 0px;
+}
