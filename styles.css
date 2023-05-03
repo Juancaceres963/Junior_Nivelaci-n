@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     --color-primario: #286075;
+    --color-secundario: #2ACAD6;
+    --color-terciario: #B2C0C6;
 }
 /* Utilidades */
 .color-primario{
@@ -29,7 +31,7 @@
 .tema img{
     border-radius: 50%;
     padding: 8px;
-    border: 1.5px solid #2ACAD6;
+    border: 1.5px solid var(--color-secundario);
 }
 .tema h1 {
     color: var(--color-primario);
@@ -38,4 +40,10 @@
 }
 .tema p{
     margin: 10px 0px;
+}
+.tema p a{
+    color: var(--color-secundario);
+}
+.tema p a:hover{
+    color: var(--color-terciario);
 }
