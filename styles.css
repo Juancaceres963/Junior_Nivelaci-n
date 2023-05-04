@@ -41,6 +41,7 @@ p{
 }
 /** Clases **/
 .nav-principal{
+    z-index: 1;
     width: 100%;
     height: 90px;
     display: flex;
@@ -75,6 +76,43 @@ p{
     height: 90px;
     width: 100%;
     background-color: white;
+}
+/* Seccion de inicio */
+.inicio{
+    width: 100%;
+} 
+.inicio img{
+    object-fit: cover;
+}
+.redes-sociales{
+    position: absolute;
+    top: 120px;
+    right: 40px;
+    display: flex;
+    gap: 20px;
+    font-size: 25px;
+}
+.redes-sociales div a{
+    color: #ffffff;
+}
+/*Seccion de somos*/
+.somos {
+    display: flex;
+    flex-basis: 50%;
+    margin-bottom: 35px;
+}
+.iconos-somos{
+    display: flex;
+    justify-content: space-around;
+}
+.iconos-somos div{
+    width: 125px;
+}
+.info-somos{
+    padding: 35px;
+}
+.info-somos p{
+    font-size: 14px;
 }
 .temas{
     display: flex;
