@@ -1,15 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     --color-primario: #286075;
     --color-secundario: #2ACAD6;
     --color-terciario: #B2C0C6;
+    --color-secundario-nav: #52A5B2;
+    font-family: 'Montserrat', sans-serif;
+}
+li, ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+p{
+    color: #333333;
+    font-size: 13px;
 }
 /* Utilidades */
 .color-primario{
     color: var(--color-primario);
 }
 /** Clases **/
+.nav-principal{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    align-items: center;
+}
+.nav-principal img{
+    height: 90px;
+}
+.enlaces-nav-prin ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+.enlaces-nav-prin ul a{
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--color-primario);
+    text-transform: uppercase;
+}
 .temas{
     display: flex;
     width: 100%;
@@ -26,7 +60,7 @@
     width: 370px;
     height: 400px;
     padding: 5px 10px;
-    text-align: justify;
+    text-align: left;
 }
 .tema img{
     border-radius: 50%;
@@ -37,6 +71,8 @@
     color: var(--color-primario);
     text-transform: uppercase;
     margin: 10px 0px;
+    font-size: 36px;
+    font-weight: 700;
 }
 .tema p{
     margin: 10px 0px;
