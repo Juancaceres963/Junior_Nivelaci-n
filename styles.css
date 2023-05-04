@@ -25,24 +25,40 @@ p{
 }
 /** Clases **/
 .nav-principal{
+    width: 100%;
+    height: 90px;
     display: flex;
     justify-content: space-between;
-    padding: 0 40px;
     align-items: center;
+    position: fixed;
+    background-color: #fffffff3;
+    box-shadow: 0 0 13px -10px;
 }
 .nav-principal img{
     height: 90px;
+    margin-left: 35px;
 }
 .enlaces-nav-prin ul{
     display: flex;
     justify-content: space-around;
     gap: 30px;
+    margin-right: 35px;
 }
 .enlaces-nav-prin ul a{
     font-size: 15px;
     font-weight: 700;
     color: var(--color-primario);
     text-transform: uppercase;
+    transition: all ease .2s;
+}
+.enlaces-nav-prin ul a:hover{
+    transition: all ease .2s;
+    color: var(--color-secundario-nav);
+}
+.fondo-nav{
+    height: 90px;
+    width: 100%;
+    background-color: white;
 }
 .temas{
     display: flex;
@@ -78,8 +94,10 @@ p{
     margin: 10px 0px;
 }
 .tema p a{
+    transition: all ease .2s;
     color: var(--color-secundario);
 }
 .tema p a:hover{
+    transition: all ease .2s;
     color: var(--color-terciario);
 }
