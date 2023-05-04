@@ -6,6 +6,7 @@
     --color-primario: #286075;
     --color-secundario: #2ACAD6;
     --color-terciario: #B2C0C6;
+    --color-linea-carta: #5E5E5E;
     --color-secundario-nav: #52A5B2;
     font-family: 'Montserrat', sans-serif;
 }
@@ -20,8 +21,15 @@ p{
     font-size: 13px;
 }
 /* Utilidades */
+.contenedor {
+    padding: 0 35px;
+}
 .color-primario{
     color: var(--color-primario);
+}
+.linea{
+    height: 5px;
+    background-color: var(--color-linea-carta);
 }
 /** Clases **/
 .nav-principal{
@@ -100,4 +108,29 @@ p{
 .tema p a:hover{
     transition: all ease .2s;
     color: var(--color-terciario);
+}
+/*Seccion de Novedades */
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card{
+    width: 30%;
+}
+.card img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+.card-info{
+    padding: 30px;
+    border: 1px solid rgb(211, 211, 211);
+    border-top: none;
+    margin-top: -3px;
+}
+.card div h3{
+    color: var(--color-primario);
+    line-height: 1.6;
+    font-weight: 600;
 }
